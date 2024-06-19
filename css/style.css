@@ -415,7 +415,7 @@ body {
         justify-content: space-evenly;
         padding-bottom: 10px;
         width: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     /* .movies_img img {
@@ -491,6 +491,6 @@ body {
         list-style-type: none;
         margin-right: 25px;
         align-content: center;
-        display: none;
+        /* display: none; */
     }
 }

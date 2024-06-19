@@ -204,10 +204,18 @@
     align-items: center;
    
  }
- .reviews{
+.reviews{
     display: flex;
     align-content: baseline;
     width: 2775px;
+    background: #f3f3f3;
+}
+ 
+ .reviews1{
+    display: flex;
+    align-content: baseline;
+    width: 50%;
+    background: #f3f3f3;
  }
  
  .Review1:hover .info h4 {
@@ -235,7 +243,7 @@
  }
  
   .rateings {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 5px;
  }
 
@@ -245,12 +253,6 @@
     text-align: left;
     font-size: 13px;
  }
-
-.reviews {
-    background: #f3f3f3;
-    /* width: 341px;
-    height: 426px; */
-}
 
 .info a {
     text-decoration: none;
@@ -283,7 +285,7 @@
         border-radius: 0px;
         display: flex;
         align-items: center;
-        margin: 0% 5%;
+        /* margin: 0% 5%; */
         padding: 20px;
         justify-content: space-between;
         position: relative;
@@ -321,6 +323,20 @@
         background: transparent;
         color: #333333;
     }*/
+
+    .review-sec {
+        /* margin: 0% 5%; */
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+     }
+
+    .reviews{
+        display: flex;
+        align-content: baseline;
+        width: 50%;
+     }
+
 } 
 
 @media screen and (max-width:1050px) {
@@ -330,7 +346,7 @@
         border-radius: 0px;
         display: flex;
         align-items: center;
-        margin: 0% 5%;
+        /* margin: 0% 5%; */
         padding: 20px;
         justify-content: space-between;
         position: relative;
@@ -341,6 +357,19 @@
     .logo {
         width: 30%;
     }
+
+    .review-sec {
+        /* margin: 0% 5%; */
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+     }
+
+     .reviews{
+        display: flex;
+        align-content: baseline;
+        width: 50%;
+     }
 
     
 }
@@ -360,6 +389,19 @@
     .logo {
         width: 40%;
     }
+
+    .reviews{
+        display: flex;
+        align-content: baseline;
+        width: 100%;
+     }
+
+    .reviews1{
+        display: flex;
+        align-content: baseline;
+        width: 100%;
+        background: #f3f3f3;
+     }
 
 }
 
