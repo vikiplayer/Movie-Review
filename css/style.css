@@ -46,13 +46,18 @@ header a:hover {
      /* flex-wrap: wrap; */
 }
  
-.checkbutton {
+.button {
      font-size: 30px;
      color: white;
      float: right;
      line-height: 80px;
      margin-right: 40px;
      cursor: pointer;
+     display: none;
+}
+
+.check {
+    display: none;
 }
  
 .logo {
@@ -65,7 +70,7 @@ header a:hover {
 }
  
 .menus ul {
-     display: inline-block;
+     /* display: inline-block; */
      justify-content: end;
      justify-self: right;
      /* float: right; */
@@ -333,7 +338,32 @@ header a:hover {
         list-style-type: none;
         margin-right: 25px;
         margin-top: 10px;
+        display: none;
     }
+
+    .menus ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        
+   }
+
+   .menus ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    
+}
+
+    .button {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: block;
+   }
 
     .logo {
         width: 30%;
@@ -520,6 +550,16 @@ header a:hover {
         list-style-type: none;
         margin-right: 25px;
         align-content: center;
-        /* display: none; */
+        display: none;
     }
+
+    .button {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        /* display: none; */
+   }
 }
