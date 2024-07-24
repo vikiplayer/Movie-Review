@@ -193,22 +193,38 @@ header a:hover {
     padding: 20px 0px;
 }
 
-.movies_sec {
+.carosal_section , .carosal_section1 , .carosal_section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    width: 5%;
+    text-align: right;
+
+} 
+
+.movies_sec , .movies_sec1 , .movies_sec2{
+    width: 85%;
+    overflow: hidden;
+}
+
+.slider , .slider1 , .slider2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 20px;
-    width: 100%;
+    width: 2314px;
+    
 }
 
-.movies_sec a {
-    text-decoration: none;
-}
-
-.movies_details {
+.movies_details , .movies_details1 , .movies_details2{
     background-color:  #4a4a4a;
     border-radius: 10px;
+    width: 289px;
     overflow: hidden;
+    margin: 10px 5px;
 }
 
 .movies_img {
@@ -218,6 +234,7 @@ header a:hover {
 .movies_img img {
     width: 260px;
     height: 330px;
+    object-fit: cover;
 }
 
 .movies_info {
@@ -232,6 +249,23 @@ header a:hover {
 
 .movies_info h5 {
     font-size: 18px;
+}
+
+.right{
+    width: 5%;
+}
+
+.left .left_btn , .right .right_btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 50%;
+    color: #2c2c2c;
+}
+
+.left .left_btn i , .right .right_btn i{
+    color: #2c2c2c;
 }
 
 .copyright {
