@@ -207,34 +207,46 @@ header a:hover {
 
 .movies_sec , .movies_sec1 , .movies_sec2{
     width: 85%;
-    overflow: hidden;
+    overflow: scroll;
 }
+
+.movies_sec::-webkit-scrollbar , .movies_sec1::-webkit-scrollbar , .movies_sec2::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
 
 .slider , .slider1 , .slider2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 20px;
-    width: 2314px;
+    width: 2580px;
+    transition: ease 0.5s;
     
 }
 
 .movies_details , .movies_details1 , .movies_details2{
     background-color:  #4a4a4a;
     border-radius: 10px;
-    width: 289px;
+    width: 322px;
+    height: 520px;
     overflow: hidden;
     margin: 10px 5px;
 }
 
 .movies_img {
     border: 7px solid #4a4a4a;
+    text-align: center;
 }
 
 .movies_img img {
-    width: 260px;
-    height: 330px;
+    width: 280px;
+    height: 350px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .movies_info {

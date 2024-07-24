@@ -20,7 +20,7 @@ let card = document.querySelectorAll('.movies_details');
 let card1 = document.querySelectorAll('.movies_details1');
 let card2 = document.querySelectorAll('.movies_details2');
 let cards = 4;
-let cardWidth = 289;
+let cardWidth = 322;
 
 
 function right(){
