@@ -146,6 +146,27 @@ header a:hover {
     position: relative;
     top: 5px;
 }
+.search-box{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 482px;
+}
+
+.search-box ul{
+    background: #f6f6f6;
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+}
+
+.search-box ul li{
+    list-style-type: none;
+    margin: 10px;
+    color: #4a4a4a;
+    border-bottom: 1px #f1f1f1f1 solid ;
+}
 
 .trends{
     background-color: rgba(0, 0, 0, 0.6);
@@ -221,9 +242,9 @@ header a:hover {
 .slider , .slider1 , .slider2{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     padding-bottom: 20px;
-    width: 2580px;
+    width: 2320px;
     transition: ease 0.5s;
     
 }
@@ -231,10 +252,11 @@ header a:hover {
 .movies_details , .movies_details1 , .movies_details2{
     background-color:  #4a4a4a;
     border-radius: 10px;
-    width: 322px;
-    height: 520px;
+    width: 280px;
+    height: 500px;
     overflow: hidden;
     margin: 10px 5px;
+    
 }
 
 .movies_img {
@@ -243,7 +265,7 @@ header a:hover {
 }
 
 .movies_img img {
-    width: 280px;
+    width: 260px;
     height: 350px;
     object-fit: cover;
     border-radius: 5px;
@@ -252,11 +274,12 @@ header a:hover {
 .movies_info {
     text-align: center;
     padding: 20px;
+
 }
 
-.movies_info h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
+.movies_info h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .movies_info h5 {
