@@ -148,24 +148,34 @@ header a:hover {
 }
 .search-box{
     display: none;
-    width: 100%;
     position: absolute;
-    top: 90px;
-    left: 482px;
 }
 
 .search-box ul{
     background: #f6f6f6;
     width: 400px;
-    height: 400px;
+    height: auto;
     overflow: auto;
+    margin: 1% 0% 0% 0%;
+    padding: 1% 5% 1% 10%;
+    border-radius: 20px;
 }
 
 .search-box ul li{
     list-style-type: none;
-    margin: 10px;
+    padding: 2%;
     color: #4a4a4a;
     border-bottom: 1px #f1f1f1f1 solid ;
+    transition: 0.2s;
+}
+
+.search-box ul li:nth-child(even){
+    background: #f8f8f8;
+}
+
+.search-box ul li:hover{
+    background-color: #4a4a4a;
+    color: #f8f8f8;
 }
 
 .trends{

@@ -51,37 +51,27 @@ function left2(){
 let movies = document.querySelectorAll(".search-box ul li")
 let input = document.getElementById("input");
 let box = document.querySelector(".search-box");
-function filterBox() {
-    input.addEventListener('keydown', function() {
-        box.style.display = "block";
-    });
+document.getElementById('input').addEventListener("keyup", sorting)
+function sorting(){
+    let a= document.querySelectorAll(".search-box ul li")
 
-    input.addEventListener('keyup', function() {
-        box.style.display = "none";
-    });
-
-    value.addEventListener("keyup", search)
+    for (let i = 0; i < a.length; i++) {
+        var val = document.getElementById('input').value;
+        if (a[i].innerHTML.indexOf(val) != -1) {
+            a[i].style.display = 'block'           
+        } else {
+            a[i].style.display = 'none'           
+        }
+    }
 }
 
-const searchBtn = document.getElementById("input");
-const searchBar = document.getElementById("input");
-
-let searchQuery;
-
-searchBar.addEventListener("keydown", (e) => {
-    if (e.key == "Enter" && searchBar.value != "") {
-        location.href = 'pages/results/results.html';
-        searchQuery = searchBar.value;
+document.getElementById('input').addEventListener('input', function() {
+    let input = this.value;
+    let count = input.length;
+    
+    if (count > 0) {
+        box.style.display = "block";
+    } else {
+        box.style.display = "none";
     }
-    // get value entered and show on results.html
-    // results for: "query"
-})
-
-console.log(searchQuery);
-
-    //     
-//     box.classList.toggle("active")
-// }
-
-// input.addEventListener('keyup',filterBox);
-// console.log(input)
+});
