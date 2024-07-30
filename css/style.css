@@ -364,21 +364,6 @@ header a:hover {
         width: 300px;
     }
 
-    .movies_sec {
-        padding-bottom: 10px;
-    }
-    .movies_img img {
-        width: 208px;
-        height: 264px;
-    }
-    .movies_info h3 {
-        font-size: 25px;
-        margin-bottom: 7px;
-    }
-    
-    .movies_info h5 {
-        font-size: 13px;
-    }
 
 } 
 
@@ -425,27 +410,6 @@ header a:hover {
         padding: 10px;
      }
 
-    .movies_sec {
-        padding-bottom: 10px;
-        flex-wrap: wrap;
-    }
-
-    .movies_img img {
-        width: 338px;
-        height: 429px;
-    }
-
-    .movies_details {
-        margin: 10px 5px;
-    }
-
-    .movies_info h3 {
-        font-size: 40px;
-    }
-    
-    .movies_info h5 {
-        font-size: 23px;
-    }
 }
 
 @media screen and (max-width:805px) {
@@ -460,15 +424,8 @@ header a:hover {
     .search input {
         width: 200px;
     }
-
-    .movies_sec {
-        flex-direction: column;
-    }
-
-    .movies_details {
-        margin: 10px 15px;
-    }
 }
+
 
 @media screen and (max-width:576px) {
     .logo {
@@ -477,18 +434,5 @@ header a:hover {
 
     .search input {
         width: 250px;
-    }
-    .movies_img img {
-        width: 208px;
-        height: 264px;
-    }
-
-    .movies_info h3 {
-        font-size: 25px;
-        margin-bottom: 7px;
-    }
-    
-    .movies_info h5 {
-        font-size: 13px;
     }
 }
