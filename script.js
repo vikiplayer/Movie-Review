@@ -21,7 +21,7 @@ let card1 = document.querySelectorAll('.movies_details1');
 let card2 = document.querySelectorAll('.movies_details2');
 let cards = 4;
 let cardWidth = 290;
-
+ 
 
 function right(){
     if(+slider.style.marginLeft.slice(0,-2)!= -cardWidth * (card.length-cards))
